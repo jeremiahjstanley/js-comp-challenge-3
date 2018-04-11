@@ -1,0 +1,49 @@
+body {
+  display: grid;
+  grid-template-columns: 15% 55% 30%;
+  grid-template-rows: 5vh 15vh 30vh 15vh 35vh;
+}
+
+nav {
+  background-color: #354052;
+  grid-column: 1;
+  grid-row: 1 / 6;
+}
+
+header {
+  background-color: #FFFFFF;
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+menu {
+  background-color: #FFFFFF;
+  grid-column: 2 / 4;
+  grid-row: 2
+}
+
+section {
+  background-color: #edf2f6;
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+main {
+  background-color: #edf2f6;
+  grid-column: 2;
+  grid-row: 4 / 6;
+}
+
+.social-media {
+  background-color: #edf2f6;
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.copy-links {
+  background-color: #edf2f6;
+  grid-column: 23
+  grid-row: 5;
+}
+
+
