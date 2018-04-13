@@ -10,7 +10,7 @@
 <g>
 	<g>
 		<rect x="1" y="1" class="st0" width="574" height="574"/>
-		<path class="st1" d="M574,2v572H2V2H574 M576,0H0v576h576V0L576,0z"/>
+		<path class="st1" d="M574,2v572H2V2H574 M576,576V0l0,0H0v576"/>
 	</g>
 	<g>
 		<rect x="193.5" y="196.2" class="st1" width="188.6" height="37"/>
