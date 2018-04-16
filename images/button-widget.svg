@@ -3,11 +3,11 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#7B8594;}
-	.st1{fill:#15A4FA;}
+	.st0{fill:#6F7A8B;}
 </style>
-<rect x="6.6" y="4.8" class="st0" width="13.4" height="2"/>
-<rect x="6.6" y="8.9" class="st0" width="13.4" height="2"/>
-<rect x="6.6" y="13.2" class="st0" width="13.4" height="2"/>
-<polygon class="st1" points="4.4,6.9 4.4,12.9 0,9.9 "/>
+<g>
+	<path class="st0" d="M3.2,3.2v1.7v1.8v1.7v6.8v1.7h13.6v-1.7V8.3V6.7V4.8V3.2H3.2z M4.9,4.8h1.6v1.8H4.9V4.8z M15.1,15.2H4.9V8.3
+		h10.2V15.2z M15.1,6.7H8.2V4.8h6.9L15.1,6.7L15.1,6.7z"/>
+	<path class="st0" d="M14.2,12.6v-1.8V9.2H5.7v1.7v1.8v1.7h8.5V12.6z M7.4,12.6v-1.8h1.7v1.8H7.4z"/>
+</g>
 </svg>
