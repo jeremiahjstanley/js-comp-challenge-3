@@ -1,9 +1,11 @@
+/*@import reset.css;*/
+
 body {
   display: grid;
   background-color: #edf2f6;
   font-family: Open Sans, Sans-Serif;
   grid-template-columns: 15% 55% 30%;
-  grid-template-rows: 60px 180px 450px 225px calc(100% - 915px)
+  grid-template-rows: 60px 180px 455px 225px calc(100% - 920px)
 }
 
 a,
@@ -39,7 +41,7 @@ nav {
   width: 40%;
 }
 
-h3 {
+.nav--h3--user-name {
   color: #FFFFFF;
   font-size: .8rem;
   margin: 0 auto 2rem auto;
@@ -257,7 +259,7 @@ h1 {
   color: rgba(0, 0, 0, .7);
   font-weight: 600;
   opacity: 1;
-  padding: 0 1.5rem .5rem 1.5rem;
+  padding: 0 1.5rem .5rem;
   text-transform: uppercase;
 }
 
@@ -274,8 +276,7 @@ h1 {
   grid-row: 3;
   grid-template-columns: 18% 18% 18% 40%;
   justify-content: space-between;
-  margin-top: 1rem;
-  padding-left: 4.5rem;
+  padding: 1rem 0 0 4.5rem ;
 }
 
 .section--article--resume-graph {
@@ -388,7 +389,7 @@ main {
 table {
   background-color: #FFFFFF;
   color: #6F7E95;
-  margin: 3.75% 4% 10% 8%;
+  margin: 3.5% 4% 3.5% 8%;
   padding: 1rem;
 }
 
@@ -483,12 +484,24 @@ td {
   color: #4E515E;
   grid-column: 3;
   grid-row: 5;
-  padding: 0rem 4rem 1rem;
+  padding: 0 4rem;
+  display: grid;
+}
+
+.job-link-input {
+  grid-row: 1;
+}
+
+.button-widget-link-input {
+  grid-row: 2;
+}
+
+.email-resume-link-input {
+  grid-row: 3;
 }
 
 .article--section--input-link {
   font-size: 1rem;
-  margin: 1rem auto;
 }
 
 .article--img--input-link-icon {
@@ -534,3 +547,119 @@ td {
   border-radius: 5px;
   width: 80%;
 }
+
+/*Media Breaks*/
+
+@media screen and (max-width: 1250px) {
+
+  body {
+    grid-template-columns: 3% 62% 35%;
+  }
+
+  span,
+  .nav--h3--user-name,
+  .nav--h4--menu-headers,
+  .nav--img--headshot {
+    display: none;
+  }
+
+  .graph-dashboard {
+    padding: 1rem;
+  }
+
+  .article--input-links-section {
+    padding: 0 0 0 3rem;
+  }
+
+  table {
+    margin: 2rem 2.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1150px) {
+
+  body {
+    grid-template-rows: 60px 180px auto
+  }
+
+  menu {
+    padding: 35px 2.5% 0;
+  }
+
+  main {
+    grid-column: 2 / 4;
+    grid-row: 4 / 6;
+  }
+
+  nav {
+    grid-row: 1 / 8;
+  }
+
+  .menu--a--dashboard-link {
+    padding: 0 1rem .5rem ;
+    text-transform: uppercase;
+  }
+
+  .menu--ul--dashboard-navigation-link-list {
+    justify-self: center;
+  }
+
+  .article--input-links-section {
+    grid-column: 2 /4 ;
+    grid-row: 6;
+    padding: 0;
+    margin: 0 .5rem 2rem;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+  }
+
+  .job-link-input {
+    grid-column: 1;
+  }
+
+  .button-widget-link-input {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .email-resume-link-input {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .article--social-media--buttons {
+    align-self: center;
+    flex-direction: row;
+    grid-column: 2 /4 ;
+    grid-row: 7;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+body {
+  grid-template-columns: 0 65% 35%;
+}
+
+nav {
+  display: none;
+}
+
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+
+}
+
+
+
+
+
+
+
