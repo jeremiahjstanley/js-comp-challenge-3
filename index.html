@@ -3,50 +3,51 @@
 <head>
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JS Static Comp Challenge 3</title>
 </head>
 <body>
     <nav>
 
-        <img src="images/headshot.jpg" class="nav--img--headshot">
-        <h3>
-            <a href="#" class="nav--a--links-text">John Smith</a> 
+        <img src="images/headshot.jpg" class="nav--img--headshot" alt="Your profile picture">
+        <h3 class="nav--h3--user-name">
+            <span><a href="#" class="nav--a--links-text">John Smith</a></span>
         </h3>
 
         <h4 class="nav--h4--menu-headers">Main</h4>
         <ul class="nav--ul--navigation-bar">
-            <li class="nav--li--links"><img src="images/home.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/home.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Home</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/jobs.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/jobs.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Jobs</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/resumes.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/resumes.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Resumes</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/tasks.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/tasks.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Tasks</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/calendar.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/calendar.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Calendar</a></span>
             </li>
         </ul>
 
         <h4 class="nav--h4--menu-headers">Admin</h4>
         <ul class="nav--ul--navigation-bar">
-            <li class="nav--li--links"><img src="images/users.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/users.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Users</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/locations.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/locations.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Locations</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/workflows.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/workflows.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Workflows</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/job-boards.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/job-boards.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Job Boards</a></span>
             </li>
-            <li class="nav--li--links"><img src="images/social.svg" class="nav--li--icon" aria="hidden">
+            <li class="nav--li--links"><img src="images/social.svg" class="nav--li--icon" aria-hidden>
                 <span><a href="#" class="nav--a--links-text">Social</a></span>
             </li>
         </ul>
@@ -74,7 +75,7 @@
     </nav>
 
     <header>
-        <button class="header--button--style expand-icon" aria-label="Expand Menu">
+        <button class="header--button--style expand-icon" aria-label="Expand Lefthand Menu" aria-expanded="false" aria-controls="nav">
         </button>
         <input type="text" class="header--input--search" placeholder="Search for a job, task, or resume">
         <button class="header--button--style add-contact-icon" aria-label="Add as a Contact">
@@ -117,8 +118,8 @@
 
         <ul class="menu--ul--dashboard-navigation-link-list">
             <li class="menu--li--dashboard-link">
-                <a href="#" class="menu--a--dashboard-link">
-                Summary
+                <a href="#" class="menu--a--dashboard-link dropdown-mobile-menu">
+                Summary<img src="images/mobile-arrow-down.svg" class="dropdown-mobile-menu-icon" aria-label="Drop Down Menu" aria-expanded="false">
                 </a>
             </li>
             <li class="menu--li--dashboard-link">
@@ -154,9 +155,9 @@
 
     </menu>
 
-    <section class="graph-dashboard">
+    <section class="body--section--graph-dashboard">
 
-        <article class="section--article--resume-graph">
+        <article class="section--article--resume-graph svg-circle-graph">
             <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
                 <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">
                 </circle>
@@ -171,7 +172,7 @@
             </svg>
         </article>
 
-        <article class="section--article--interview-graph">
+        <article class="section--article--interview-graph svg-circle-graph">
             <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
                 <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">
                 </circle>
@@ -186,7 +187,7 @@
             </svg>
         </article>
 
-        <article class="section--article--forwards-graph">
+        <article class="section--article--forwards-graph svg-circle-graph">
             <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
                 <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">
                 </circle>
@@ -206,34 +207,35 @@
             <img src="images/bar-graph.png" alt="Applicant/Days Bar Graph"
             class="section--article--applicants-graph-img">
         </article>
-        <button class="section--button--circle-graphs-legend">
+        <button class="section--button--circle-graphs-legend graph-legend-button">
             TOTALS - Out of <p class="circle-graph-legend-view-count">5,231 views</p>
         </button>
-        <button class="section--button--bar-graph-legend">
+        <button class="section--button--bar-graph-legend graph-legend-button">
             &zwnj; APPLICANTS/DAYS &zwnj;
         </button>
         <section class="section--horizontal-line">
             <div aria-hidden></div>
-            <button class="section--horizontal-line-button">
-                <img src="images/arrow-down.svg">
+            <button class="section--horizontal-line-button" 
+            aria-controls="body--section--graph-dashboard">
+                <img src="images/arrow-down.svg" >
             </button>
             <div aria-hidden></div>
         </section>
 
     </section>
 
-    <main class="job-description">
+    <main class="body--main--job-description">
         <table>
 
-              <colgroup>
-                <col style="width:25%">
-                <col style="width:75%">
+            <colgroup>
+                <col class="main--table--column-one">
+                <col class="main--table--column-two">
             </colgroup>
 
             <tr class="main--table--header-row">
                 <th colspan="2">
                 Job Description
-                <button class="table--button--edit">
+                <button class="table--button--edit" controls="table">
                     <img class="table--button--edit-img" src="images/edit-icon-table.svg">
                     Edit   
                 </button>
@@ -285,7 +287,7 @@
 
     </main> 
 
-    <article class="article--social-media--buttons">
+    <article class="body--article--social-media--buttons">
         <button class="article--button--social-media facebook-button">
             <img src="images/facebook-icon.svg" class="article--button--social-icon facebook-icon" aria-label="Post to Facebook">
             Post to Facebook
@@ -300,50 +302,51 @@
         </button>
     </article>
 
-    <article class="article--input-links-section">
+    <article class="body--article--input-links-section">
 
-
-        <section class="article--section--input-link">
-            <h2 class="article--h2--input-link-header">
+        <section class="article--section--input-link job-link-input">
+            <h2 class="article--h2--input-link-header link-to-this-job">
                 <img src="images/job-link.svg" class="article--img--input-link-icon" aria-hidden>
                 Link to this Job
             </h2>
             <p class="article--p--input--link-description">
                 Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.
             </p>
-            <input type="text" class="article-section--input-copy" placeholder="http://loremipsum.dol/sitametconsecteturdipiscingelit">
-            <button class="article--section--copy-button">
+            <input type="text" class="article-section--input-copy copy-job-link" 
+            placeholder="http://loremipsum.dol/sitametconsecteturdipiscingelit" 
+            aria-labelledby="link-to-this-job">
+            <button class="article--section--copy-button" 
+            aria-controls="copy-job-link">
             Copy
             </button>
         </section>
 
-
-        <section class="article--section--input-link">
-            <h2 class="article--h2--input-link-header">
+        <section class="article--section--input-link button-widget-link-input">
+            <h2 class="article--h2--input-link-header use-the-button-widget">
                 <img src="images/button-widget.svg" class="article--img--input-link-icon" aria-hidden>
                 Use the Button Widget
             </h2>
             <p class="article--p--input--link-description">
                 Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.
             </p>
-            <input type="text" class="article-section--input-copy" placeholder="<script type='text/javascript'>$(this)[a+this.length]:this[a]},pushStack:function(a){}</script>">
-            <button class="article--section--copy-button">
+            <input type="text" class="article-section--input-copy embed-button-widget" 
+            placeholder="<script type='text/javascript'>$(this)[a+this.length]:this[a]},pushStack:function(a){}</script>" aria-labelledby="use-the-button-widget">
+            <button class="article--section--copy-button" 
+            aria-controls="embed-button-widget">
             Copy
             </button>
         </section>
 
-
-        <section class="article--section--input-link">
-            <h2 class="article--h2--input-link-header">
+        <section class="article--section--input-link email-resume-link-input">
+            <h2 class="article--h2--input-link-header upload-resume-by-email">
                 <img src="images/upload-resume.svg" class="article--img--input-link-icon" aria-hidden>
                 Upload Resumes by Email
             </h2>
             <p class="article--p--input--link-description">
                 You can automatically upload muliple resumes to this job by emailing the address below.
             </p> 
-            <input type="text" class="article-section--input-email" placeholder="tomtizzy@gmail.com">
+            <input type="text" class="article-section--input-email" placeholder="tomtizzy@gmail.com" aria-labelledby="upload-resume-by-email">
         </section>
-
 
     </article>
 </body>
