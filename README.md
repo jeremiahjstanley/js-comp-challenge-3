@@ -2,7 +2,7 @@
 
 ## Turing School of Software and Design
 
-![Spec](images/js-static-comp-challenge-3.jpg)
+![Spec](images/static-comp-challenge-3.jpg)
 
 ![Personal Project](images/js-static-comp-challenge-3.jpg)
 
