@@ -383,7 +383,7 @@ div {
   padding: .7rem .65rem;
 }
 
-/* Job Description and Information Table */
+/* Job Description and Information List */
 
 main {
   align-self: center;
@@ -392,65 +392,74 @@ main {
   grid-row: 4 / 6;
 }
 
-table {
+.main--ul--job-description-list {
   background-color: #FFFFFF;
+  border-radius: 5px;
   color: #6F7E95;
-  margin: 3.5% 4% 3.5% 8%;
-  padding: 1rem;
+  margin: 4.5% 4% 3.5% 8%;
 }
 
-.main--table--column-one {
-  width: 25%;
+.ul--h4--job-description-list-header,
+.ul--button--edit-job-description  {
+  color: #FFFFFF;
+  padding: 2rem 1.5rem;
 }
 
-.main--table--column-two {
-  width:75%
-}
-
-th, 
-td {
+h4,
+.ul--button--edit-job-description,
+.ul--p--job-description-salary {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
   line-height: 1.5rem;
-  padding: 2rem 1rem 2rem 1rem;
+  text-transform: uppercase;
+  width: 200px;
 }
 
-td {
-  border-bottom: 1px solid rgba(0, 0, 0, .2);
+.main--ul--job-description-header {
+  background-color: #6F7E95;
+  border-radius: 5px 5px 0 0;
 }
 
-.table--button--edit-img {
+.description-paragraph-header {
+  vertical-align: top;
+}
+ 
+.ul--button--edit-img {
   margin-right: .25rem;
   vertical-align: bottom;
 }
 
-.main--table--header-row,
-.table--button--edit,
-.table--td--ledger,
-.table--td--salary {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.main--table--header-row,
-.table--button--edit {
-  color: #FFFFFF;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.table--button--edit {
+.ul--button--edit-job-description {
   background-color: rgba(255, 255, 255, .2);
   border-radius: 2px;
   display: inline;
-  margin-left: 3rem;
   padding: .5rem 1rem;
 }
 
-.table--button--edit:hover {
+.ul--button--edit-job-description:hover {
   background-color: rgba(0, 0, 0, .2);
 }
 
-.main--table--header-row {
-  background-color: #6F7E95;
+.main--ul--li-row {
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  margin: 0 1.5rem;
+  padding: 2rem 0;
+}
+
+.ul--p--job-description-info {
+  color: rgba(0, 0, 0, .6);
+  display: inline-block;
+  width: calc(100% - 225px);
+}
+
+.main--ul--li-img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.main--ul--li--bottom-row {
+  border: 0;
 }
 
 /* Social Media Links */
@@ -597,7 +606,7 @@ td {
 
   /* Job Description and Information */
 
-  table {
+  .main--ul--job-description {
     margin: 2rem 2.5rem;
   }
 
@@ -629,7 +638,7 @@ td {
     justify-self: center;
   }
 
-  /* Job Description and Information Table */
+  /* Job Description and Information List */
 
   main {
     grid-column: 2 / 4;
@@ -885,10 +894,20 @@ td {
     grid-row: 7;
   }
 
-  /* Job Description and Information */
+/* Job Description and Information List */
 
-  table {
-    margin: 1rem;
+  h4,
+  .ul--p--job-description-salary,
+  .ul--p--job-description-info {
+    display: block;
+  }
+
+  .ul--h4--job-description-list-header{
+    display: inline-block;
+  }
+
+  .ul--p--job-description-info {
+    width: 100%;
   }
 
   /* Social Media Links */
