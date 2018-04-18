@@ -42,10 +42,22 @@ nav {
 }
 
 .nav--h3--user-name {
+  margin: 0 auto 2rem;
+}
+
+.user-name-link {
   color: #FFFFFF;
   font-size: .8rem;
-  margin: 0 auto 2rem;
   opacity: .6;
+  text-transform: inherit;
+}
+
+.user-name-link:hover {
+  opacity: 1;
+}
+
+.dropdown-user-preferences-menu-icon {
+  width: .6rem;
 }
 
 .nav--h4--menu-headers {
@@ -383,6 +395,10 @@ div {
   padding: .7rem .65rem;
 }
 
+.section--horizontal-line-button:hover {
+  background-color: rgba(0, 0, 0, .05);
+}
+
 /* Job Description and Information List */
 
 main {
@@ -451,11 +467,13 @@ h4,
   color: rgba(0, 0, 0, .6);
   display: inline-block;
   width: calc(100% - 225px);
+  line-height: 1.5rem;
 }
 
 .main--ul--li-img {
   border-radius: 50%;
   width: 3rem;
+  margin-right: 1rem;
 }
 
 .main--ul--li--bottom-row {
@@ -477,7 +495,7 @@ h4,
   border: 1px inset rgba(0, 0, 0, .2);
   color: #FFFFFF;
   font-size: .9rem;
-  margin: 0 auto 2%;
+  margin: 0 0 2% 2rem;
   padding: .75rem 2rem;
   text-transform: inherit;
   width: 75%;
@@ -485,7 +503,7 @@ h4,
 
 .article--button--social-icon {
   position: relative;
-  right: 2rem;
+  right: 1.75rem;
 }
 
 .facebook-button {
@@ -494,7 +512,7 @@ h4,
 
 .twitter-button {
   background: linear-gradient(#049AE7, #01AAEF, #049AE7);
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .linked-in-button {
@@ -508,7 +526,7 @@ h4,
   display: grid;
   grid-column: 3;
   grid-row: 5;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .job-link-input {

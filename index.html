@@ -11,7 +11,13 @@
 
         <img src="images/headshot.jpg" class="nav--img--headshot" alt="Your profile picture">
         <h3 class="nav--h3--user-name">
-            <span><a href="#" class="nav--a--links-text">John Smith</a></span>
+            <span>
+            <a href="#" class="nav--a--links-text user-name-link">
+            John Smith
+            <img src="images/user-arrow-down.svg" class="dropdown-user-preferences-menu-icon"
+            aria-label="User Preference: Drop Down Menu" aria-expanded="false">
+            </a>
+            </span>
         </h3>
 
         <h4 class="nav--h4--menu-headers">Main</h4>
@@ -192,7 +198,7 @@
                 </circle>
                 <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" 
                 fill="transparent" stroke="#4AA3F3" stroke-width="3" 
-                stroke-dasharray="62 38" stroke-dashoffset="75" stroke-linecap="round">
+                stroke-dasharray="42 58" stroke-dashoffset="75" stroke-linecap="round">
                 </circle>
                 <g class="graph-text">
                     <text x="50%" y="50%" class="graph-number">1546</text>
@@ -335,10 +341,11 @@
                 Link to this Job
             </h2>
             <p class="article--p--input--link-description">
-                Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.
+                You can get a link to this job posting by clicking
+                the copy button next to the below input.
             </p>
             <input type="text" class="article-section--input-copy copy-job-link" 
-            placeholder="http://loremipsum.dol/sitametconsecteturdipiscingelit" 
+            placeholder="http://loremipsum.com/this-job-link" 
             aria-labelledby="link-to-this-job">
             <button class="article--section--copy-button" 
             aria-controls="copy-job-link">
@@ -352,11 +359,12 @@
                 Use the Button Widget
             </h2>
             <p class="article--p--input--link-description">
-                Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.
+                You can use the below button widget script to embed this job posting on your page.
             </p>
             <input type="text" class="article-section--input-copy embed-button-widget" 
-            placeholder="<script type='text/javascript'>$(this)[a+this.
-            length]:this[a]},pushStack:function(a){}</script>" aria-labelledby="use-the-button-widget">
+            placeholder="!function(a){varembedly-platform'
+            ,c='script';if(!a.getElementById(b))"
+            aria-labelledby="use-the-button-widget">
             <button class="article--section--copy-button" 
             aria-controls="embed-button-widget">
             Copy
