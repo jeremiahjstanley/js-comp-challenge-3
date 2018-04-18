@@ -274,7 +274,7 @@ h1 {
 
 /* Graph and User Dash Board Data */
 
-.graph-dashboard {
+.body--section--graph-dashboard {
   background-color: #EDF2F6;
   display: grid;
   grid-column: 2 / 4;
@@ -455,7 +455,7 @@ td {
 
 /* Social Media Links */
 
-.article--social-media--buttons {
+.body--article--social-media--buttons {
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -494,7 +494,7 @@ td {
 
 /* Input Links */
 
-.article--input-links-section {
+.body--article--input-links-section {
   color: #4E515E;
   display: grid;
   grid-column: 3;
@@ -591,7 +591,7 @@ td {
     padding: 1rem;
   }
 
-  .article--input-links-section {
+  .body--article--input-links-section {
     padding: 0 0 0 3rem;
   }
 
@@ -638,7 +638,7 @@ td {
 
   /* Social Media Links */
 
-  .article--social-media--buttons {
+  .body--article--social-media--buttons {
     flex-direction: row;
     grid-column: 2 /4 ;
     grid-row: 6;
@@ -657,7 +657,7 @@ td {
 
   /* Input Links */
 
-  .article--input-links-section {
+  .body--article--input-links-section {
     grid-column: 2 /4 ;
     grid-row: 7;
     grid-template-columns: 30% 30% 30%;
@@ -696,7 +696,7 @@ td {
 
   /* Input Links */
 
-  .article--input-links-section {
+  .body--article--input-links-section {
     grid-gap: 2rem;
     grid-template-columns: 80%;
     margin-left: 1rem;
@@ -763,7 +763,7 @@ td {
 
   /* Graph and User Dash Board Data */
 
-  .graph-dashboard {
+  .body--section--graph-dashboard {
     grid-template-columns: 33% 33% 33%;
     grid-row-gap: 1rem;
     padding: .5rem;
@@ -844,7 +844,7 @@ td {
 
   /* Graph and User Dash Board Data */
 
-  .graph-dashboard {
+  .body--section--graph-dashboard {
     grid-gap: 1rem;
     grid-template-columns: 90%;
     justify-content: space-evenly;
@@ -893,7 +893,7 @@ td {
 
   /* Social Media Links */
 
-  .article--social-media--buttons {
+  .body--article--social-media--buttons {
     align-self: center;
     display: flex;
     flex-direction: column;
