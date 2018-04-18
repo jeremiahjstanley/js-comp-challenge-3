@@ -4,7 +4,7 @@
 
 ![Spec](images/js-static-comp-challenge-3.jpg)
 
-![Personal Project](images/js-static-comp-challenge-2.jpg)
+![Personal Project](images/js-static-comp-challenge-3.jpg)
 
 ### Specification
 
